@@ -14,14 +14,13 @@
 
 gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 
-Манифест: task1/hello-world-pod.yaml.
+Манифест: 
+[hello-world-pod](task1/hello-world-pod.yaml)
 
 Создание и проверка Pod
 
 microk8s kubectl apply -f task1/hello-world-pod.yaml
 microk8s kubectl get pods
-
-Ожидаемый результат: Pod hello-world находится в статусе Running и имеет READY 1/1.
 
 ![скриншот](image/1.png)
 
@@ -42,7 +41,7 @@ microk8s kubectl get pods
 
 Манифесты:
 
-[web-pod](.task2/netology-web-pod.yaml)
+[web-pod](task2/netology-web-pod.yaml)
 
 [svc](task2/netology-svc.yaml)
 
